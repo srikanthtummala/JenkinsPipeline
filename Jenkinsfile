@@ -4,6 +4,7 @@ pipeline {
     stage('Checkout') {
       steps {
         bat 'echo "Hello World."'
+        bat 'echo "${env.WORKSPACE}"'
       }
     }
   }
